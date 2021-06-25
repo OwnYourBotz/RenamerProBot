@@ -26,7 +26,7 @@ async def help_user(c,m):
         try:
             user = await c.get_chat_member(update_channel, m.chat.id)
             if user.status == "kicked":
-               await m.reply_text("🤭 Sorry Dude, You are **B A N N E D**. If you feel You are not guilty please contact owner")
+               await m.reply_text("🤭 Sorry Dude, You are **B A N N E D** to Use Me. If you feel it's a Fault contact @TeleRoid14")
                return
         except UserNotParticipant:
             await m.reply_text(
@@ -48,7 +48,7 @@ async def start_msg(c,m):
         try:
             user = await c.get_chat_member(update_channel, m.chat.id)
             if user.status == "kicked":
-               await m.reply_text("🤭 Sorry Dude, You are **B A N N E D**. If you feel You are not guilty please contact owner")
+               await m.reply_text("🤭 Sorry Dude, You are **B A N N E D**. If you feel it's a fault contact @TeleRoid14")
                return
         except UserNotParticipant:
             await m.reply_text(
@@ -62,11 +62,11 @@ async def start_msg(c,m):
         reply_markup=InlineKeyboardMarkup(
             [
                [
-                InlineKeyboardButton("⚙ Updates Channel", url=f"https://t.me/mwklinks"),
-                    InlineKeyboardButton("🛠 Support Group", url=f"https://t.me/redbullfed")
+                InlineKeyboardButton("⭕ Channel ⭕", url=f"https://t.me/TeleRoidGroup"),
+                    InlineKeyboardButton("⭕ Support ⭕", url=f"https://t.me/TeleRoid14")
                 ],
                 [
-                    InlineKeyboardButton("👨‍🔬 Developer", url=f"https://t.me/shamilnelli")
+                    InlineKeyboardButton("👨‍🔬 Developer", url=f"https://t.me/TheTeleRoid")
                 ]
             ]
         ),
