@@ -40,7 +40,7 @@ async def save_photo(c,m):
             file_name=download_location
         ) 
         try:
-           await v.edit_text("Buddy, Your Custom Thumbnail Saved Successfully 😌")
+           await v.edit_text("Your Custom Thumbnail Saved Successfully 😌")
         except Exception as e:
           log.info(f"#Error {e}")
 
@@ -52,12 +52,12 @@ async def delete_thumbnail(c,m):
         await del_thumb(m.from_user.id)
     except:
         pass
-    await m.reply_text("Succesfully Deleted Thumbnail 😔",quote=True)
+    await m.reply_text("Succesfully Deleted your saved Thumbnail 😔",quote=True)
 
 @Client.on_message(filters.command(["showthumb"]))
 async def show_thumbnail(c,m):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/thumb/" + str(m.from_user.id) + ".jpg"
-    msgg = await m.reply_text("Checking Thumbnail... 🧐",quote=True)
+    msgg = await m.reply_text("Checking your Thumbnail... 🧐",quote=True)
 
     if not os.path.exists(thumb_image_path):
         mes = await thumb(m.from_user.id)
@@ -70,7 +70,7 @@ async def show_thumbnail(c,m):
 
     if thumb_image_path is None:
         try:
-            await msgg.edit_text("No Saved Thumbnail Found!! 😐😐")
+            await msgg.edit_text("No Saved Thumbnail Found!!")
         except:
               pass               
     else:
