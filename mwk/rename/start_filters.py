@@ -37,10 +37,22 @@ async def help_user(c,m):
             )
             return
     try:
-       await m.reply_text(Translation.HELP_USER,quote=True)
-    except Exception as e:
-        log.info(str(e))
-        
+       await m.reply_text(Translation.HELP_USER,quote=True),
+           reply_markup=InlineKeyboardMarkup(
+            [
+               [
+                InlineKeyboardButton("⭕ BᴏᴛLɪsᴛ ⭕", url=f"https://t.me/joinchat/t1ko_FOJxhFiOThl"),
+                    InlineKeyboardButton("💢 Gɪᴛʜᴜʙ", url=f"https://github.com/PredatorHackerzZ/Renamer-Bot")
+                ],
+                [
+                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TheTeleRoid"),
+                    InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url=f"https://t.me/MoviesFlixers_DL")
+                ]
+            ]
+        ),
+        reply_to_message_id=m.message_id
+          #return
+
 @Client.on_message(filters.command("start"))
 async def start_msg(c,m):
     update_channel = Config.UPDATE_CHANNEL
@@ -62,11 +74,15 @@ async def start_msg(c,m):
         reply_markup=InlineKeyboardMarkup(
             [
                [
-                InlineKeyboardButton("⭕ Channel ⭕", url=f"https://t.me/TeleRoidGroup"),
-                    InlineKeyboardButton("⭕ Support ⭕", url=f"https://t.me/TeleRoid14")
+                InlineKeyboardButton("⭕ Cʜᴀɴɴᴇʟ ⭕", url=f"https://t.me/TeleRoidGroup"),
+                    InlineKeyboardButton("⭕ Sᴜᴘᴘᴏʀᴛ ⭕", url=f"https://t.me/TeleRoid14")
                 ],
                 [
-                    InlineKeyboardButton("👨‍🔬 Developer", url=f"https://t.me/TheTeleRoid")
+                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TheTeleRoid"),
+                    InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url=f"https://t.me/MoviesFlixers_DL")
+                ],
+                [
+                    InlineKeyboardButton("🔐 Cʟᴏsᴇ", callback_data="cancel")
                 ]
             ]
         ),
