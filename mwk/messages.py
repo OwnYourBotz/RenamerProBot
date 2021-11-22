@@ -2,13 +2,15 @@ class Translation(object):
     START_TEXT = """**Hello,
 This is a Telegram Rename Bot by @TheTeleRoid😇
 
-Please send me any File, I can Rename It As Per Your choices to telegram as File/Video
+Please send me any File, I can Rename or Convert It As Per Your choices to telegram as File/Video
 
 Hit /help for more details.. and more thing waiting for u there 😉**"""
 ######################
-    HELP_USER = """**1 >>Send File/Video\n2 >>Choose Your desired Option\n3 >>Wait for it to process files**"""
-    DOWNLOAD_MSG = "**Yup Bro, Downloading....**😌"
-    DOWNLOAD_FAIL_MSG = "**Sorry Dear😔, Something Error With Your File**❎"
+    HELP_USER = """**I can rename media without downloading it!
+Speed depends on your media DC.\n\nJust send me media and Choose Below Given Option. 
+And Wait For It Process.\n\nTo set custom thumbnail to any image with Just Send the Image to Bot.\n\nTo see custom thumbnail press /showthumb command\n\nTo Delete Custom Thumbnail Press /deletethumb command**"""
+    DOWNLOAD_MSG = "**Media is Downloading....**😌"
+    DOWNLOAD_FAIL_MSG = "**Sorry 😔, Something Error With Your Media**❎"
     UPLOAD_MSG = "**Yeah Boy, Uploading it**🤓"
-    UPLOAD_FAIL_MSG = "**Sorry Dear 😔, Something Error With Your File**❎"
-    UPLOAD_DONE_MSG = "**Finally Uploaded Join My Update Channel.. if you like me 🤪\n\n@TheTeleRoid"
+    UPLOAD_FAIL_MSG = "**Sorry , Something Error With Your Media**❎"
+    UPLOAD_DONE_MSG = "**Finally Uploaded Your Media Join My Updates Channel.. if you like me\n\n@TheTeleRoid"
