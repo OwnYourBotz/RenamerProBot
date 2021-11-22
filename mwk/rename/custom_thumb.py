@@ -52,7 +52,7 @@ async def delete_thumbnail(c,m):
         await del_thumb(m.from_user.id)
     except:
         pass
-    await m.reply_text("Succesfully Deleted your saved Thumbnail 😔",quote=True)
+    await m.reply_text("Succesfully Deleted your saved Thumbnail 😊",quote=True)
 
 @Client.on_message(filters.command(["showthumb"]))
 async def show_thumbnail(c,m):
@@ -82,7 +82,7 @@ async def show_thumbnail(c,m):
 
         await m.reply_photo(
         photo=thumb_image_path,
-        caption="This is the Saved Thumbnail!!!\nYou Can delete this by using \n/deletethumb Command!! •Bugs Report @redbullfed 🤷‍♀️",
+        caption="Here Is Your Saved Thumbnail!!!\nYou Can delete this by using \n/deletethumb Command!! •Bugs Report @TeleRoid14 🤷‍♀️",
         quote=True
     )
 
