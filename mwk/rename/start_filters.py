@@ -36,9 +36,8 @@ async def help_user(c,m):
               ])
             )
             return
-    try:
-       await m.reply_text(Translation.HELP_USER,quote=True),
-           reply_markup=InlineKeyboardMarkup(
+    await m.reply_text(Translation.HELP_USER,quote=True),
+        reply_markup=InlineKeyboardMarkup(
             [
                [
                 InlineKeyboardButton("⭕ BᴏᴛLɪsᴛ ⭕", url=f"https://t.me/joinchat/t1ko_FOJxhFiOThl"),
