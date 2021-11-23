@@ -36,7 +36,7 @@ async def help_user(c,m):
               ])
             )
             return
-    await m.reply_text(Translation.HELP_USER,quote=True),
+    await m.reply_text(Translation.HELP_USER,
         reply_markup=InlineKeyboardMarkup(
             [
                [
@@ -49,8 +49,9 @@ async def help_user(c,m):
                 ]
             ]
         ),
-        reply_to_message_id=m.message_id)
-          #return
+        reply_to_message_id=m.message_id
+   )
+          #  return
 
 @Client.on_message(filters.command("start"))
 async def start_msg(c,m):
