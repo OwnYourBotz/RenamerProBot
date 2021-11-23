@@ -53,6 +53,40 @@ async def help_user(c,m):
     )
           #  return
 
+@Client.on_message(filters.command("about"))
+async def about_bot(c,m):
+    update_channel = Config.UPDATE_CHANNEL
+    if update_channel:
+        try:
+            user = await c.get_chat_member(update_channel, m.chat.id)
+            if user.status == "kicked":
+               await m.reply_text("🤭 Sorry Dude, You are **B A N N E D** to Use Me. If you feel it's a Fault contact @TeleRoid14")
+               return
+        except UserNotParticipant:
+            await m.reply_text(
+                text="**Join My Updates Channel to use me & Enjoy the Free Service**",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text="Join Our Updates Channel", url=f"https://t.me/{update_channel}")]
+              ])
+            )
+            return
+    await m.reply_text(Translation.ABOUT_BOT.format(m.from_user.first_name),
+        reply_markup=InlineKeyboardMarkup(
+            [
+               [
+                InlineKeyboardButton("⭕ BᴏᴛLɪsᴛ ⭕", url=f"https://t.me/joinchat/t1ko_FOJxhFiOThl"),
+                    InlineKeyboardButton("💢 Gɪᴛʜᴜʙ", url=f"https://github.com/PredatorHackerzZ/Renamer-Bot")
+                ],
+                [
+                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TheTeleRoid"),
+                    InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url=f"https://t.me/MoviesFlixers_DL")
+                ]
+            ]
+        ),
+        reply_to_message_id=m.message_id
+    )
+          #  return
+
 @Client.on_message(filters.command("start"))
 async def start_msg(c,m):
     update_channel = Config.UPDATE_CHANNEL
@@ -82,7 +116,7 @@ async def start_msg(c,m):
                     InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url=f"https://t.me/MoviesFlixers_DL")
                 ],
                 [
-                    InlineKeyboardButton("🔐 Cʟᴏsᴇ", callback_data="cancel")
+                    InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="cancel")
                 ]
             ]
         ),
