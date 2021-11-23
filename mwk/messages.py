@@ -13,3 +13,4 @@ Speed depends on your media DC.\n\n○ Just send me media and Choose Below Given
     UPLOAD_MSG = "**Media Is Uploading**📤"
     UPLOAD_FAIL_MSG = "**Sorry , Something Error With Your Media**❎"
     UPLOAD_DONE_MSG = "**Finally Uploaded Your Media Join My Updates Channel.. if you like me\n@TheTeleRoid**"
+    ABOUT_BOT = Want to Know About Me.... Nothing Here Just Repo On @TheTeleRoid.
