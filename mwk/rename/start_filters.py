@@ -25,7 +25,7 @@ async def help_user(c,m):
     if update_channel:
         try:
             user = await c.get_chat_member(update_channel, m.chat.id)
-            if user.status == "kicked":
+            if user.status == "banned":
                await m.reply_text("🤭 Sorry Dude, You are **B A N N E D** to Use Me. If you feel it's a Fault contact @TeleRoid14")
                return
         except UserNotParticipant:
@@ -59,7 +59,7 @@ async def about_bot(c,m):
     if update_channel:
         try:
             user = await c.get_chat_member(update_channel, m.chat.id)
-            if user.status == "kicked":
+            if user.status == "banned":
                await m.reply_text("🤭 Sorry Dude, You are **B A N N E D** to Use Me. If you feel it's a Fault contact @TeleRoid14")
                return
         except UserNotParticipant:
@@ -93,7 +93,7 @@ async def start_msg(c,m):
     if update_channel:
         try:
             user = await c.get_chat_member(update_channel, m.chat.id)
-            if user.status == "kicked":
+            if user.status == "banned":
                await m.reply_text("🤭 Sorry Dude, You are **B A N N E D**. If you feel it's a fault contact @TeleRoid14")
                return
         except UserNotParticipant:
