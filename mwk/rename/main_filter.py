@@ -17,7 +17,7 @@ async def rename_filter(c,m):
     if update_channel:
         try:
             user = await c.get_chat_member(update_channel, m.chat.id)
-            if user.status == "kicked":
+            if user.status == "banned":
                await m.reply_text("🤭 Sorry Dude, You are **B A N N E D** to use Me. If you feel it's a fault Contact @TeleRoid14")
                return
         except UserNotParticipant:
