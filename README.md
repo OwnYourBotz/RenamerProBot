@@ -22,7 +22,7 @@
 Use [Rename Robot](https://telegram.dog/mwk_renamebot) 
 
 #### The Simple Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/PredatorHackerzZ/RenameXBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/PayForBotZ/RenamerProBot)
 
 ### While deplying kindly add buildback of ffmpeg
 
