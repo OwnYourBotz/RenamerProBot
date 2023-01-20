@@ -1,6 +1,6 @@
 class Translation(object):
     START_TEXT = """**Hello,
-This is a Telegram Rename Bot by @TheTeleRoid😇
+This is a Telegram Rename Bot by @OwnYourBotz 😇
 
 Please send me any File, I can Rename or Convert It As Per Your choices to telegram as File/Video
 
@@ -12,5 +12,5 @@ Speed depends on your media DC.\n\n○ Just send me media and Choose Below Given
     DOWNLOAD_FAIL_MSG = "**Sorry 😔, Something Error With Your Media**❎"
     UPLOAD_MSG = "**Media Is Uploading**📤"
     UPLOAD_FAIL_MSG = "**Sorry , Something Error With Your Media**❎"
-    UPLOAD_DONE_MSG = "**Finally Uploaded Your Media Join My Updates Channel.. if you like me\n@TheTeleRoid**"
-    ABOUT_BOT = "Want to Know About Me.... Nothing Here Just Repo On @TheTeleRoid."
+    UPLOAD_DONE_MSG = "**Finally Uploaded Your Media Join My Updates Channel.. if you like me.**"
+    ABOUT_BOT = "Want to Know About Me....\n Nothing Here Just Repo On @KDramasFlix"
