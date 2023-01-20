@@ -44,7 +44,7 @@ async def help_user(c,m):
                     InlineKeyboardButton("💢 Gɪᴛʜᴜʙ", url=f"https://github.com/PredatorHackerzZ/Renamer-Bot")
                 ],
                 [
-                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TheTeleRoid"),
+                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TeleRoidGroup"),
                     InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url=f"https://t.me/MoviesFlixers_DL")
                 ]
             ]
@@ -78,7 +78,7 @@ async def about_bot(c,m):
                     InlineKeyboardButton("💢 Gɪᴛʜᴜʙ", url=f"https://github.com/PredatorHackerzZ/Renamer-Bot")
                 ],
                 [
-                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TheTeleRoid"),
+                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TeleRoidGroup"),
                     InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url=f"https://t.me/MoviesFlixers_DL")
                 ]
             ]
@@ -112,7 +112,7 @@ async def start_msg(c,m):
                     InlineKeyboardButton("⭕ Sᴜᴘᴘᴏʀᴛ ⭕", url=f"https://t.me/TeleRoid14")
                 ],
                 [
-                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/TheTeleRoid"),
+                InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ", url=f"https://t.me/SinglemachiVision"),
                     InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ Bʏ", url=f"https://t.me/MoviesFlixers_DL")
                 ],
                 [
